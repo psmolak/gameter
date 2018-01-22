@@ -12,7 +12,7 @@ body {
 	font-weight: light;
 }
 
-#main-search button {
+#main-search button.btn-custom {
 	color: #555;
 	background-color: #fafafa;
 }
@@ -35,3 +35,32 @@ body {
 
 }
 
+div#communities {
+	background-color: #ececec;
+	margin-top: 100px;
+	padding: 30px 0;
+}
+
+#communities div.community a {
+	display: block;
+	padding: 10px 0px;
+	color: #444;
+}
+
+#communities div.community a h4 {
+	/* font-weight: lighter; */
+	margin-top: 6px;
+}
+
+#communities div.community a:hover {
+	text-decoration: none;
+	color: #444;
+	/* border: 1px solid #ccc; */
+	border-radius: 4px;
+	background-color: #ddd;
+}
+
+#communities div.community .flag {
+	height: 2.4rem;
+	width: 3.2rem;
+}

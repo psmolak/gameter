@@ -15,6 +15,8 @@
 		<title>Gameter</title>
 	</head>
 	<body>
+
+		<!-- Header & Logo -->
 		<header id="header" class="container mt-3 mb-5">
 			<div class="row align-items-center">
 				<div class="col text-center">
@@ -24,12 +26,14 @@
 			</div>
 		</header>
 
+		<!-- Search bar -->
 		<div id="main-search" class="container">
 			<div class="row justify-content-center align-items-center">
 				<div class="col-12 text-center mb-2">
 
+					<!-- Country select -->
 					<span class="dropdown">
-						<button type="button" class="btn btn-lg dropdown-toggle font-weight-normal" data-toggle="dropdown">
+						<button type="button" class="btn btn-lg btn-custom dropdown-toggle font-weight-normal" data-toggle="dropdown" title="Select your community">
 							<span class="flag-icon flag-icon-pl"></span>
 							Poland
 						</button>
@@ -118,8 +122,9 @@
 						</div>
 					</span>
 
+					<!-- Server select -->
 					<span class="dropdown">
-						<button type="button" class="btn btn-lg dropdown-toggle font-weight-light" data-toggle="dropdown">
+						<button type="button" class="btn btn-custom btn-lg dropdown-toggle font-weight-light" data-toggle="dropdown" title="Select your server">
 							Quantum
 						</button>
 						<div class="dropdown-menu">
@@ -160,10 +165,276 @@
 						</div>
 					</span>
 
+					<!-- Help tooltip -->
+					<button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" data-placement="top" title="Select your country and server first." disabled>?</button>
+
 				</div>
 
+				<!-- Search bar -->
 				<div class="col-4 text-center align-self-center">
-					<input class="form-control form-control-lg border-0 " type="search" placeholder="search for player...">
+					<input class="form-control form-control-lg border-0" type="search" placeholder="search for player...">
+				</div>
+
+			</div>
+		</div>
+
+		<!-- Communities -->
+		<div id="communities" class="container-fluid">
+			<div class="container">
+				<div class="row mb-5">
+					<div class="col text-center">
+						<h3 class="font-weight-light">
+							Communities<br>
+							<small class="text-muted font-weight-light">Select community to browse its statistics</small>
+						</h2>
+					</div>
+				</div>
+
+				<div class="row">
+
+					<div class="col-2 text-center px-4">
+						<div class="community">
+							<a class="font-weight-light" href="#">
+								<div class="flag flag-icon flag-icon-pl"></div>
+								<h4 class="h6">Poland</h5>
+							</a>
+						</div>
+					</div>
+
+					<div class="col-2 text-center px-4">
+						<div class="community">
+							<a class="font-weight-light" href="#">
+								<div class="flag flag-icon flag-icon-ar"></div>
+								<h4 class="h6">Argentina</h5>
+							</a>
+						</div>
+					</div>
+
+					<div class="col-2 text-center px-4">
+						<div class="community">
+							<a class="font-weight-light" href="#">
+								<div class="flag flag-icon flag-icon-br"></div>
+								<h4 class="h6">Brasil</h5>
+							</a>
+						</div>
+					</div>
+
+					<div class="col-2 text-center px-4">
+						<div class="community">
+							<a class="font-weight-light" href="#">
+								<div class="flag flag-icon flag-icon-dk"></div>
+								<h4 class="h6">Denmark</h5>
+							</a>
+						</div>
+					</div>
+
+					<div class="col-2 text-center px-4">
+						<div class="community">
+							<a class="font-weight-light" href="#">
+								<div class="flag flag-icon flag-icon-de"></div>
+								<h4 class="h6">Deutshland</h5>
+							</a>
+						</div>
+					</div>
+
+					<div class="col-2 text-center px-4">
+						<div class="community">
+							<a class="font-weight-light" href="#">
+								<div class="flag flag-icon flag-icon-es"></div>
+								<h4 class="h6">Espana</h5>
+							</a>
+						</div>
+					</div>
+
+					<div class="col-2 text-center px-4 ">
+						<div class="community">
+							<a class="font-weight-light" href="#">
+								<div class="flag flag-icon flag-icon-fr"></div>
+								<h4 class="h6">France</h5>
+							</a>
+						</div>
+					</div>
+
+					<div class="col-2 text-center px-4">
+						<div class="community">
+							<a class="font-weight-light" href="#">
+								<div class="flag flag-icon flag-icon-hr"></div>
+								<h4 class="h6">Hrvatska</h5>
+							</a>
+						</div>
+					</div>
+
+					<div class="col-2 text-center px-4">
+						<div class="community">
+							<a class="font-weight-light" href="#">
+								<div class="flag flag-icon flag-icon-it"></div>
+								<h4 class="h6">Italia</h5>
+							</a>
+						</div>
+					</div>
+
+					<div class="col-2 text-center px-4">
+						<div class="community">
+							<a class="font-weight-light" href="#">
+								<div class="flag flag-icon flag-icon-hu"></div>
+								<h4 class="h6">Magyarország</h5>
+							</a>
+						</div>
+					</div>
+
+					<div class="col-2 text-center px-4">
+						<div class="community">
+							<a class="font-weight-light" href="#">
+								<div class="flag flag-icon flag-icon-mx"></div>
+								<h4 class="h6">Mexico</h5>
+							</a>
+						</div>
+					</div>
+
+					<div class="col-2 text-center px-4">
+						<div class="community">
+							<a class="font-weight-light" href="#">
+								<div class="flag flag-icon flag-icon-nl"></div>
+								<h4 class="h6">Nederland</h5>
+							</a>
+						</div>
+					</div>
+
+					<div class="col-2 text-center px-4 ">
+						<div class="community">
+							<a class="font-weight-light" href="#">
+								<div class="flag flag-icon flag-icon-no"></div>
+								<h4 class="h6">Norge</h5>
+							</a>
+						</div>
+					</div>
+
+					<div class="col-2 text-center px-4">
+						<div class="community">
+							<a class="font-weight-light" href="#">
+								<div class="flag flag-icon flag-icon-pt"></div>
+								<h4 class="h6">Portugal</h5>
+							</a>
+						</div>
+					</div>
+
+					<div class="col-2 text-center px-4">
+						<div class="community">
+							<a class="font-weight-light" href="#">
+								<div class="flag flag-icon flag-icon-ro"></div>
+								<h4 class="h6">Romania</h5>
+							</a>
+						</div>
+					</div>
+
+					<div class="col-2 text-center px-4">
+						<div class="community">
+							<a class="font-weight-light" href="#">
+								<div class="flag flag-icon flag-icon-si"></div>
+								<h4 class="h6">Slovenija</h5>
+							</a>
+						</div>
+					</div>
+
+					<div class="col-2 text-center px-4">
+						<div class="community">
+							<a class="font-weight-light" href="#">
+								<div class="flag flag-icon flag-icon-sk"></div>
+								<h4 class="h6">Slovensko</h5>
+							</a>
+						</div>
+					</div>
+
+					<div class="col-2 text-center px-4">
+						<div class="community">
+							<a class="font-weight-light" href="#">
+								<div class="flag flag-icon flag-icon-fi"></div>
+								<h4 class="h6">Suomi</h5>
+							</a>
+						</div>
+					</div>
+
+					<div class="col-2 text-center px-4 ">
+						<div class="community">
+							<a class="font-weight-light" href="#">
+								<div class="flag flag-icon flag-icon-se"></div>
+								<h4 class="h6">Sverige</h5>
+							</a>
+						</div>
+					</div>
+
+					<div class="col-2 text-center px-4">
+						<div class="community">
+							<a class="font-weight-light" href="#">
+								<div class="flag flag-icon flag-icon-tr"></div>
+								<h4 class="h6">Turkiye</h5>
+							</a>
+						</div>
+					</div>
+
+					<div class="col-2 text-center px-4">
+						<div class="community">
+							<a class="font-weight-light" href="#">
+								<div class="flag flag-icon flag-icon-us"></div>
+								<h4 class="h6">USA</h5>
+							</a>
+						</div>
+					</div>
+
+					<div class="col-2 text-center px-4">
+						<div class="community">
+							<a class="font-weight-light" href="#">
+								<div class="flag flag-icon flag-icon-gb"></div>
+								<h4 class="h6">United Kingdom</h5>
+							</a>
+						</div>
+					</div>
+
+					<div class="col-2 text-center px-4">
+						<div class="community">
+							<a class="font-weight-light" href="#">
+								<div class="flag flag-icon flag-icon-cz"></div>
+								<h4 class="h6">Ceska Republika</h5>
+							</a>
+						</div>
+					</div>
+
+					<div class="col-2 text-center px-4">
+						<div class="community">
+							<a class="font-weight-light" href="#">
+								<div class="flag flag-icon flag-icon-gr"></div>
+								<h4 class="h6">Greece</h5>
+							</a>
+						</div>
+					</div>
+
+					<div class="col-2 text-center px-4">
+						<div class="community">
+							<a class="font-weight-light" href="#">
+								<div class="flag flag-icon flag-icon-ru"></div>
+								<h4 class="h6">Russian Federation</h5>
+							</a>
+						</div>
+					</div>
+
+					<div class="col-2 text-center px-4">
+						<div class="community">
+							<a class="font-weight-light" href="#">
+								<div class="flag flag-icon flag-icon-tw"></div>
+								<h4 class="h6">Taiwan</h5>
+							</a>
+						</div>
+					</div>
+
+					<div class="col-2 text-center px-4">
+						<div class="community">
+							<a class="font-weight-light" href="#">
+								<div class="flag flag-icon flag-icon-jp"></div>
+								<h4 class="h6">Japan</h5>
+							</a>
+						</div>
+					</div>
+
 				</div>
 			</div>
 		</div>
@@ -171,5 +442,12 @@
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+		<script>
+			$(function() {
+				$('[data-toggle="popover"]').popover();
+				$('[data-toggle="tooltip"]').tooltip();
+			})
+		</script>
 	</body>
 </html>
