@@ -48,14 +48,12 @@ div#communities {
 }
 
 #communities div.community a h4 {
-	/* font-weight: lighter; */
 	margin-top: 6px;
 }
 
 #communities div.community a:hover {
 	text-decoration: none;
 	color: #444;
-	/* border: 1px solid #ccc; */
 	border-radius: 4px;
 	background-color: #ddd;
 }
@@ -63,4 +61,39 @@ div#communities {
 #communities div.community .flag {
 	height: 2.4rem;
 	width: 3.2rem;
+}
+
+div#population p.chart-info {
+	color: #5d5d5d;
+}
+
+div#population div.progress {
+	height: 10px;
+}
+
+.active-players {
+	color: #afdde9;
+}
+
+.inactive-players {
+	color: #808080;
+}
+
+.banned-players {
+	color: #ffaaaa;
+}
+
+.active-players-bg {
+	background-color: #afdde9;
+}
+
+.inactive-players-bg {
+	background-color: #808080;
+}
+
+.banned-players-bg {
+	background-color: #ffaaaa;
+}
+
+footer#footer nav {
 }

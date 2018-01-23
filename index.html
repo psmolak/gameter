@@ -439,15 +439,67 @@
 			</div>
 		</div>
 
+		<div id="population" class="container mt-5 mb-5">
+			<div class="row mb-5">
+				<div class="col text-center">
+					<h3 class="font-weight-light">
+						Population<br>
+						<small class="text-muted font-weight-light">Overall population across all communities</small>
+					</h2>
+				</div>
+			</div>
+
+			<div class="row text-center justify-content-center mb-5">
+				<div class="col">
+					<canvas id="population-chart" height="80px"></canvas>
+				</div>
+			</div>
+
+			<div class="row text-center justify-content-center">
+				<div class="col-9">
+					<p class="h5 font-weight-light chart-info">
+						Currently there are
+						<span class="font-weight-normal active-players">24 917</span> active,
+						<span class="font-weight-normal inactive-players">36 012</span> inactive and
+						<span class="font-weight-normal banned-players">7 063</span>
+						banned players across all communities.
+					</p>
+					<div class="progress mt-4">
+						<div title="24 917 active" class="progress-bar active-players-bg" style="width: 35%"></div>
+						<div title="36 012 inactive" class="progress-bar inactive-players-bg" style="width: 55%"></div>
+						<div title="7 063 banned" class="progress-bar banned-players-bg" style="width: 10%"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer id="footer" class="container text-center">
+			<div class="row justify-content-center">
+				<div class="col-4">
+					<nav class="nav justify-content-center border-bottom">
+						<a class="nav-link text-secondary" href="#">About</a>
+						<a class="nav-link text-secondary" href="#">Contact</a>
+						<a class="nav-link text-secondary" href="#">Status</a>
+						<a class="nav-link text-secondary" href="#">Help</a>
+					</nav>
+				</div>
+			</div>
+
+			<div class="row mt-2">
+				<div class="col-12">
+					<p class="mb-0 text-secondary">Copyright © 2017 Paweł Smolak</p>
+					<p class="text-secondary">
+						Code available at
+						<a class="text-secondary" href="#">github.com</a>
+					</p>
+				</div>
+			</div>
+		</div>
+
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-		<script>
-			$(function() {
-				$('[data-toggle="popover"]').popover();
-				$('[data-toggle="tooltip"]').tooltip();
-			})
-		</script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.bundle.min.js"></script>
+		<script src="js/main.js"></script>
 	</body>
 </html>
