@@ -1,6 +1,7 @@
 body {
 	background-color: #fafafa;
 	font-family: "Ubuntu";
+	font-smooth: always;
 }
 
 #header > div {
@@ -30,9 +31,8 @@ body {
 	font-weight: light;
 }
 
-.form-control:focus {
+#main-search .form-control:focus {
 	box-shadow: 0px 0px 0px 3px rgba(0, 0, 0, 0.1);
-
 }
 
 div#communities {
@@ -97,4 +97,144 @@ div#population div.progress {
 
 footer#footer nav a {
 	font-size: 1.05rem;
+}
+
+
+
+
+
+
+/* Player */
+
+header#player-header {
+	background: #4d4d4d;
+}
+
+header#player-header p.player-summary {
+	color: #e6e6e6;
+	font-size: 1.2rem;
+}
+
+header#player-header p.player-summary a {
+	color: #b3b3b3;
+	transition: 0.2s;
+}
+
+header#player-header p.player-summary a:hover {
+	color: #d3d3d3;
+}
+
+header#player-header p.last-updated-info {
+	color: #999;
+	font-size: 0.8rem;
+}
+
+header#player-header h2 {
+	color: #e6e6e6;
+}
+
+header#player-header div.card {
+	background-color: transparent;
+	border-color: transparent;
+}
+
+header#player-header p.ranking-score {
+	color: #e6e6e6;
+}
+
+header#player-header p.ranking-name {
+	color: #e6e6e6;
+	font-weight: bold;
+}
+
+header#player-header input[type="search"] {
+	background: #5d5d5d;
+	background-image: url("../images/search-player.png");
+	background-position: 95%;
+	background-repeat: no-repeat;
+	border-color: #5d5d5d;
+	color: #999;
+}
+
+header#player-header input[type="search"]::placeholder {
+	color: #888;
+}
+
+header#player-header input[type="search"]:focus {
+	box-shadow: 0px 0px 0px 3px rgba(255, 255, 255, 0.3);
+}
+
+header#player-header #breadcrumbs {
+	color: #b3b3b3;
+	font-size: 0.9rem;
+}
+
+header#player-header #breadcrumbs a {
+	transition: 0.2s;
+	color: #b3b3b3;
+}
+
+header#player-header #breadcrumbs a:hover {
+	color: #d3d3d3;
+	text-decoration: none;
+}
+
+header#player-header #breadcrumbs .separator {
+	margin: 0 10px;
+	color: #808080;
+}
+
+#highscores-menu {
+	border-bottom: 1px solid #e6e6e6;
+}
+
+#highscores-menu a {
+	font-size: 1.2rem;
+	color: #808080;
+	transition: 0.2s;
+	border-bottom: 1px solid transparent;
+}
+
+#highscores-menu a.active {
+	border-bottom: 1px solid #999;
+}
+
+#highscores-menu a:hover {
+	color: #505050;
+}
+
+#highscores-menu a:focus {
+	transition: 0;
+	outline: 0;
+}
+
+#highscores-charts div.chart-wrapper header h3 {
+	color: #808080;
+	font-size: 1.2rem;
+}
+
+#highscores-charts div.chart-wrapper p.diff-box {
+	width: 20%;
+	margin: 0 auto;
+	color: #808080;
+}
+
+#highscores-charts div.chart-wrapper p.diff-box.gain {
+	background-color: rgba(213, 255, 230, 0.86);
+}
+
+#highscores-charts div.chart-wrapper p.diff-box.gain .diff-box-title {
+	color: #37c871;
+}
+
+#highscores-charts div.chart-wrapper p.diff-box.stable {
+	background-color: rgba(236, 236, 236, 0.86);
+}
+
+#highscores-charts div.chart-wrapper p.diff-box.stable .diff-box-title {
+	color: #4d4d4d;
+}
+
+footer#footer {
+	background-color: #ececec;
 }

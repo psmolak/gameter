@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<!-- Flags CSS -->
+		<link rel="stylesheet" href="css/flag-icon.min.css">
+		<!-- Main CSS -->
+		<link rel="stylesheet" href="css/style.css">
+
+		<title>Gameter - Player</title>
+	</head>
+	<body>
+
+		<header id="player-header" class="container-fluid">
+			<div class="container">
+
+				<!-- Navbar -->
+				<div class="row pt-4 pb-4 justify-content-between">
+					<!-- Breadcrumbs -->
+					<div id="breadcrumbs" class="col">
+						<a href="#">
+							<span class="flag-icon flag-icon-pl mr-1"></span>
+							Poland
+						</a>
+						<span class="separator">&gt;</span>
+						<a href="#">Quantum</a>
+						<span class="separator">&gt;</span>
+						<a href="#">Players</a>
+					</div>
+
+					<!-- Search -->
+					<div class="col-3">
+						<form>
+							<input class="form-control" type="search" placeholder="search for player">
+						</form>
+					</div>
+
+				</div> <!-- Navbar -->
+
+
+				<div class="row">
+
+					<!-- Player summary -->
+					<div class="col-6">
+						<div class="mb-4">
+							<div class="row align-items-end mb-2">
+								<div class="col-4">
+									<h2 class="m-0 p-0 text-center">Malakian</h2>
+								</div>
+
+								<div class="col text-center">
+									<div class="card">
+										<div class="card-body m-0 p-0">
+											<p class="card-text ranking-score m-0 p-0">570</p>
+											<p class="card-text ranking-name m-0 p-0">Total</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="col text-center">
+									<div class="card">
+										<div class="card-body m-0 p-0">
+											<p class="card-text ranking-score m-0 p-0">512</p>
+											<p class="card-text ranking-name m-0 p-0">Economy</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="col text-center">
+									<div class="card">
+										<div class="card-body m-0 p-0">
+											<p class="card-text ranking-score m-0 p-0">593</p>
+											<p class="card-text ranking-name m-0 p-0">Research</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="col text-center">
+									<div class="card">
+										<div class="card-body m-0 p-0">
+											<p class="card-text ranking-score m-0 p-0">1002</p>
+											<p class="card-text ranking-name m-0 p-0">Military</p>
+										</div>
+									</div>
+								</div>
+
+							</div>
+
+							<div class="progress" style="height:0.3rem;">
+								<div class="progress-bar" style="width:45%; background: #afdde9;"></div>
+								<div class="progress-bar" style="width:20%; background: #55e799;"></div>
+								<div class="progress-bar" style="width:35%; background: #ffaaaa;"></div>
+							</div>
+						</div>
+
+						<div class="font-weight-light">
+							<p class="player-summary">
+								Currenly, <a href="#">Malakian</a> is an active player and member of <a href="#">Titans</a>.
+								<br>Owns 5 plantes along with 0 moons.
+							</p>
+						</div>
+
+						<div>
+							<p class="last-updated-info">Last updated in 11.02.2018</p>
+						</div>
+					</div>
+
+					<!-- Timeline -->
+					<div class="col-6">
+					</div>
+				</div>
+
+			</div> <!-- Inner container non-fluid -->
+		</header>
+
+		<div class="container mt-5 mb-5">
+
+			<div class="row justify-content-center mb-5">
+				<ul id="highscores-menu" class="col-7 nav nav-fill justify-content-center font-weight-light" role="tablist">
+					<li class="nav-item">
+						<a class="nav-link" id="total-tab" data-toggle="tab" href="#total-highscore">Total</a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link" id="economy-tab" data-toggle="tab" href="#economy-highscore">Economy</a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link active" id="research-tab" data-toggle="tab" href="#research-highscore">Research</a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link" id="military-tab" data-toggle="tab" href="#military-highscore">Military</a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link" id="honor-tab" data-toggle="tab" href="#honor-highscore">Honor</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="tab-content">
+				<div class="tab-pane" id="total-highscore" role="tabpanel">
+				</div>
+
+				<div class="tab-pane" id="economy-highscore" role="tabpanel">
+				</div>
+
+				<div class="tab-pane active" id="research-highscore" role="tabpanel">
+					<div id="highscores-charts" class="row">
+						<div class="col">
+
+							<!-- Score points -->
+							<div class="chart-wrapper mb-5">
+								<header class="text-center pb-4">
+									<!-- <h3 class="">Score points</h3> -->
+									<p class="diff-box gain p-3">
+										<span class="diff-box-title">12.7%</span><br>
+										<span class="font-weight-light">increase since yesterday</span>
+									</p>
+								</header>
+								<div>
+									<canvas height="75px" class="highscore-chart" id="research-chart"></canvas>
+								</div>
+							</div>
+
+
+							<!-- Position -->
+							<div class="chart-wrapper">
+								<header class="text-center pb-4">
+									<!-- <h3 class="">Score points</h3> -->
+									<p class="diff-box stable p-3">
+										<span class="diff-box-title">0</span><br>
+										<span class="font-weight-light">increase since yesterday</span>
+									</p>
+								</header>
+								<div>
+									<canvas height="75px" class="highscore-chart" id="research-chart-position"></canvas>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="tab-pane" id="military-highscore" role="tabpanel">
+				</div>
+
+				<div class="tab-pane" id="honor-highscore" role="tabpanel">
+				</div>
+			</div> <!-- Tab content -->
+		</div> <!-- Highscores container wrapper -->
+
+		<footer id="footer" class="container-fluid text-center p-4">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-4">
+						<nav class="nav font-weight-normal justify-content-center border-bottom">
+							<a class="nav-link text-secondary" href="#">About</a>
+							<a class="nav-link text-secondary" href="#">Contact</a>
+							<a class="nav-link text-secondary" href="#">Status</a>
+							<a class="nav-link text-secondary" href="#">Help</a>
+						</nav>
+					</div>
+				</div>
+
+				<div class="row mt-2">
+					<div class="col-12">
+						<p class="mb-0 text-secondary">Copyright © 2017 Paweł Smolak</p>
+						<p class="text-secondary">
+							Code available at
+							<a class="text-secondary" href="#">github.com</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.bundle.min.js"></script>
+		<script src="js/main.js"></script>
+		<!-- <script> -->
+		<!-- 	$(function () { -->
+		<!-- 		$('#highscores-menu li#total-tab').tab('show') -->
+		<!-- 	}) -->
+		<!-- </script> -->
+	</body>
+</html>

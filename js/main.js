@@ -40,4 +40,57 @@ $(function() {
 		data: data,
 		options: {}
 	});
+
+
+	var ctx1 = $("#research-chart");
+	var data1 = {
+		datasets: [
+			{
+				label: "Research points",
+				data: [24117, 24370, 24180, 24200, 24310, 24308, 24712, 26010, 25910, 25905, 26101, 26510],
+				backgroundColor: 'rgba(128, 255, 179, 1)',
+				borderColor: 'rgba(55, 200, 113, 0.9)',
+				pointBackgroundColor: 'rgba(55, 200, 113, 1)',
+				pointHitRadius: 20
+			},
+		],
+		labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+	};
+
+	var ctx2 = $("#research-chart-position")
+	var data2 = {
+		datasets: [
+			{
+				label: "Research position",
+				data: [24117, 24370, 24180, 24200, 24310, 24308, 24712, 26010, 25910, 25905, 26101, 26510],
+				backgroundColor: 'rgba(128, 255, 179, 0.15)',
+				borderColor: 'rgba(136, 136, 136, 0.9)',
+				pointBackgroundColor: 'rgba(136, 136, 136, 1)',
+				pointHitRadius: 20
+			},
+		],
+		labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+	};
+
+	var chart1 = new Chart(ctx1, {
+		type: 'line',
+		data: data1,
+		options: {
+			scales: {
+				xAxes: [{ gridLines: { display: false } }],
+				yAxes: [{ gridLines: { display: false } }]
+			}
+		}
+	});
+
+	var chart2 = new Chart(ctx2, {
+		type: 'line',
+		data: data2,
+		options: {
+			scales: {
+				xAxes: [{ gridLines: { display: false } }],
+				yAxes: [{ gridLines: { display: false } }]
+			}
+		}
+	});
 });
